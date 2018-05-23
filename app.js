@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 
 // In production (Heroku) I redirect the HTTP requests to https.
 // Documentation: http://jaketrent.com/post/https-redirect-node-heroku/
-if (app.get('env') === 'production') {
+/*if (app.get('env') === 'production') {
     app.use(function(req, res, next) {
         if (req.headers['x-forwarded-proto'] !== 'https') {
             res.redirect('https://' + req.get('Host') + req.url);
@@ -29,7 +29,7 @@ if (app.get('env') === 'production') {
             next()
         }
     });
-}
+}*/
 
 
 // uncomment after placing your favicon in /public
